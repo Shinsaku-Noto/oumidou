@@ -60,7 +60,7 @@ ul li:before {
 
 /* carousel */
 .carousel-item {
-    height: 32rem;
+    aspect-ratio: 3/2;
     background: #777;
     color: white;
     position: relative;
@@ -75,7 +75,7 @@ ul li:before {
     padding-left: 15px;
     z-index: 10;
 }
-.carousel h6, .carousel p {
+.carousel h5, .carousel p {
     text-shadow: 0.5px 0.5px #dddddd;
 }
 
@@ -197,7 +197,70 @@ button img {
 
 /* modal */
 #room-image {
-    height: 21rem;
     justify-content: center;
     
+}
+
+/* レスポンシブ */
+@media screen and (max-width:1200px) {
+    .title-bg img {
+        width: 80%;
+    }
+
+    #container.col-8 {
+        width: 90%;
+    }
+
+    .carousel-indicators {
+        display: none;
+    }
+
+    .carousel-item .container-image h5 {
+        font-size: 0.5rem;
+    }
+
+    .carousel-item .container-image p {
+        font-size: 0.8rem;
+    }
+
+    .carousel-item .container-image a {
+        font-size: 0.3rem;
+        margin-top: 0px;
+    }
+    
+    #room-detail {
+        display: none;
+    }
+
+    #room-badge {
+        display: inline !important;
+    }
+
+    .table-item2 {
+        width: 60%;
+    }
+
+    #room-url {
+        font-size: 0.5rem;
+    }
+}
+
+@media  screen and (max-width:990px) {
+    .modal-body .row .col-9 {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width:800px) {
+    #contact-media-big {
+        display: none;
+    }
+
+    #contact-media-small {
+        display: block !important;
+    }
+
+    #images .col-3 {
+        width: 50%;
+    }
 }
